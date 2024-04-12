@@ -29,7 +29,7 @@ public class OAuth2SuccessHandler implements AuthenticationSuccessHandler {
         Object principal = authentication.getPrincipal();
         CustomOAuth2User oauth = null;
 
-        // todo: 코드 수정 필수
+        // todo:  코드 수정 필수
         if(principal instanceof OidcUser) {
             // google
             oauth = Provider.GOOGLE.convertToUser((OidcUser) principal);
